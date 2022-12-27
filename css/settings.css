@@ -1,0 +1,300 @@
+.content .warpper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .content .warpper {
+        grid-template-columns: minmax(100px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+/* Start Box Control */
+.box-control .body .control-row  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.box-control .body .control-row .text h3  {
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.box-control .body .control-row .text p  {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.box-control .body form textarea {
+    padding: 10px;
+    width: 100%;
+    min-height: 150px;
+    font-size: 14px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+/* End Box Control */
+/* Start Box General */
+.box-general .body {
+    margin-top: 20px;
+}
+.box-general .body .general-row {
+    margin-bottom: 15px;
+}
+.box-general .body .general-row label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #888;
+}
+.box-general .body .general-row input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+.box-general .body .general-row .disabled {
+    cursor: no-drop;
+    background-color: #f0f4f8;
+    color: #bbb;
+    display: inline-flex;
+    width: calc(100% - 80px);
+    margin-right: 10px;
+}
+.box-general .body .general-row a {
+    color: var(--blue-color);
+}
+/* End Box General */
+/* Start Box Security */
+.box-security .body {
+    margin-top: 20px;
+}
+.box-security .body .security-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.box-security .body .security-row .text h3 {
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.box-security .body .security-row .text p {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+}
+.box-security .body .security-row a {
+    background-color: var(--blue-color);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.box-security .body .security-row a:hover {
+    background-color: #125cb3;
+}
+.box-security .body .last-security {
+    margin-bottom: -20px;
+}
+.box-security .body .last-security a {
+    background-color: #eee;
+    color: black;
+}
+.box-security .body .last-security a:hover {
+    background-color: #eee;
+    color: black;
+}
+/* End Box Security */
+/* Start Box Social */
+.box-social .body {
+    margin-top: 20px;
+}
+.box-social .body .social-row {
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-social .body .social-row i {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-right: 1px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    color: #888;
+}
+.box-social .body .social-row input {
+    width: 100%;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+/* End Box Social */
+/* Start Box Wedget */
+.box-wedget .body {
+    margin-top: 20px;
+}
+.box-wedget .body .wedget-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.box-wedget .body .wedget-row input {
+    display: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.box-wedget .body .wedget-row label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+.box-wedget .body .wedget-row label::before, 
+.box-wedget .body .wedget-row label::after {
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+}
+.box-wedget .body .wedget-row label::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid #888;
+}
+.box-wedget .body .wedget-row label::after {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(360deg);
+    transition: 0.3s;
+}
+.box-wedget .body .wedget-row input:checked + label::after {
+    transform: scale(1);
+}
+/* End Box Wedget */
+/* Start Box Backup */
+.box-backup .body {
+    margin-top: 20px;
+}
+.box-backup .body .backup-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.box-backup .body .backup-row input {
+    display: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.box-backup .body .backup-row label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+.box-backup .body .backup-row label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.box-backup .body .backup-row label::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -6px;
+    transform: scale(0);
+    transition: 0.3s;
+}
+.box-backup .body .backup-row input:checked + label::after {
+    transform: scale(1);
+}
+.box-backup .body .backup-row input:checked + label::before {
+    border-color: var(--blue-color);
+}
+.box-backup .body .servers {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    gap: 10px;
+}
+@media (max-width: 767px) {
+    .box-backup .body .servers {
+        flex-wrap: wrap;
+    }
+}
+.box-backup .body .servers input {
+    display: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.box-backup .body .servers .server {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    position: relative;
+    transition: 0.3s;
+}
+.box-backup .body .servers i {
+    display: block;
+    margin-bottom: 10px;
+}
+.box-backup .body .servers label {
+    display: block;
+    margin: 15px;
+    cursor: pointer;
+}
+.box-backup .body .servers input:checked + .server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+    transition: 0.3s;
+}
+/* End Box Backup */
+/* End Warpper */
+                                                 /*  Designed by Youssef Elewa  */

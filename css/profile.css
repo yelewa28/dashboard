@@ -1,0 +1,208 @@
+.content .warpper {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+/* Start Box Overview */
+.box-overview {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+}
+.box-overview .avatar {
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-right: 2px solid #eee;
+}
+.box-overview .avatar img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+.box-overview .avatar h3 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+.box-overview .avatar p {
+    margin: 0;
+    margin-bottom: 15px;
+    color: #888;
+}
+.box-overview .avatar .progress {
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height: 6px;
+    background-color: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.box-overview .avatar .progress span {
+    position: absolute;
+    width: 70%;
+    height: 6px;
+    background-color: var(--blue-color);
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+}
+.box-overview .avatar .stars {
+    margin-bottom: 15px;
+    color: var(--orange-color);
+    margin-top: 15px;
+}
+.box-overview .avatar .rate {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #888;
+}
+.box-overview .info {
+    width: 100%;
+}
+.box-overview .info .info-row {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+.box-overview .info .info-row h4 {
+    font-size: 15px;
+    color: #888;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.box-overview .info .info-row .prop {
+    margin-bottom: 10px;
+}
+.box-overview .info .info-row .prop span:first-child {
+    font-size: 14px;
+    color: #888;
+}
+.box-overview .info .info-row .prop span:last-child {
+    font-size: 14px;
+}
+@media (max-width: 767px) {
+    .box-overview {
+        flex-wrap: wrap;
+    }
+    .box-overview .avatar {
+        margin: auto;
+        border: none;
+    }
+    .box-overview .info .info-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-overview .info .info-row .prop {
+        min-width: 250px;
+    }
+    .box-overview .info .info-row h4 {
+        width: 100%;
+    }
+}
+/* End Box Overview */
+/* Start Box Other Data */
+.box-other-data {
+    display: flex;
+    gap: 20px;
+    background-color: #f1f5f9 !important;
+}
+.box-other-data .lang-skills {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex-grow: 1;
+}
+.box-other-data .intro p {
+    font-size: 15px;
+}
+.box-other-data .body {
+    margin-top: 20px;
+}
+.box-other-data .lang-skills .body .lang-row {
+    display: flex;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.box-other-data .lang-skills .body .lang-row span {
+    background-color: #eee;
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+.box-other-data .activitie {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex-grow: 2;
+}
+.box-other-data .activitie .activitie-row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.box-other-data .activitie .activitie-row img {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+}
+.box-other-data .activitie .activitie-row .info span:first-child {
+    display: block;
+    margin-bottom: 10px;
+}
+.box-other-data .activitie .activitie-row .info span:last-child {
+    display: block;
+    color: #888;
+}
+.box-other-data .activitie .activitie-row .data {
+    margin-left: auto;
+    text-align: right;
+}
+.box-other-data .activitie .activitie-row .data span:first-child {
+    display: block;
+    margin-bottom: 10px;
+}
+.box-other-data .activitie .activitie-row .data span:last-child {
+    display: block;
+    color: #888;
+}
+.box-other-data .lang-skills .body .last-lang {
+    margin-bottom: -20px;
+}
+.box-other-data .activitie .body .last-activitie {
+    margin-bottom: -20px;
+}
+@media (max-width: 991px) {
+    .box-other-data {
+        flex-wrap: wrap;
+        padding: 0 !important;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .box-other-data .lang-skills .body .lang-row {
+        justify-content: center;
+    }
+    .box-other-data .body {
+        text-align: center;
+    }
+    .box-other-data .lang-skills {
+        height: fit-content;
+    }
+    .box-other-data .activitie .activitie-row {
+        flex-direction: column;
+    }
+    .box-other-data .activitie .activitie-row img {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .box-other-data .activitie .activitie-row .data {
+        margin: auto;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+/* End Box Other Data */
+                                     /* Designed by Youssef Elewa  */

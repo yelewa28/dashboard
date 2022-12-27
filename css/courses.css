@@ -1,0 +1,85 @@
+.content .warpper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .content .warpper {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px
+    }
+}
+.box-courses {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+.box-courses .images img:first-child {
+    max-width: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.box-courses .images img:last-child {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    border: 2px solid white;
+}
+.box-courses .body .text {
+    padding: 20px;
+}
+.box-courses .body .text h4 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+.box-courses .body .text p {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.box-courses .body .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box-courses .body .info span::before {
+    content: "";
+    background-color: #eee;
+    width: calc(50% - 46px);
+    height: 1px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.box-courses .body .info span::after {
+    content: "";
+    background-color: #eee;
+    width: calc(50% - 46px);
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.box-courses .body .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #888;
+    font-size: 13px;
+}
+.box-courses .body .icon .icon-row i {
+    margin-right: 5px;
+}
+                                 /* Designed by Youssef Elewa  */

@@ -1,0 +1,107 @@
+.content .warpper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .content .warpper {
+        grid-template-columns: minmax(250px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px
+    }
+}
+.box-plans {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.box-plans .head-plans {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    outline: 3px solid;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.plans-one .head-plans {
+    outline-color: var(--green-color);
+}
+.plans-two .head-plans {
+    outline-color: var(--blue-color);
+}
+.plans-three .head-plans {
+    outline-color: var(--orange-color);
+}
+.box-plans .head-plans h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.box-plans .head-plans .price-plans {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.box-plans .head-plans .price-plans span:first-child {
+    font-size: 25px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+.box-plans .head-plans .price-plans span:last-child {
+    font-size: 40px;
+}
+.box-plans .body-plans .plans-row {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.box-plans .body-plans .plans-row .yes {
+    font-size: 18px;
+    color: var(--green-color);
+    margin-right: 5px;
+}
+.box-plans .body-plans .plans-row span {
+    font-size: 15px;
+}
+.box-plans .body-plans .plans-row .help {
+    margin-left: auto;
+    color: #888;
+    cursor: pointer;
+}
+.box-plans .body-plans .plans-row i:not(.yes, .help) {
+    color: var(--red-color);
+    margin-right: 5px;
+    font-size: 18px;
+}
+.box-plans .foot-plans {
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+.box-plans .foot-plans a {
+    color: white;
+    padding: 4px 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.plans-one .foot-plans a:hover {
+    background-color: #21b758;
+}
+.plans-two .foot-plans a:hover {
+    background-color: #1667c7;
+}
+.box-plans .last-foot-plans {
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    color: #888;
+}
+                                 /* Designed by Youssef Elewa  */

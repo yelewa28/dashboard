@@ -1,0 +1,124 @@
+.content .warpper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .content .warpper {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.box-project .data {
+    text-align: right;
+    margin-top: -10px;
+    margin-right: -10px;
+    font-size: 13px;
+    color: #888;
+}
+.box-project .intro-project h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.box-project .intro-project p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+.box-project .body {
+    margin-top: 10px;
+}
+.box-project .body .project-images {
+    min-height: 80px;
+    position: relative;
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.box-project .project-images img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.box-project .project-images img:not(:first-child) {
+    margin-left: -15px;
+}
+.box-project .project-images img:hover {
+    position: relative;
+    transition: 0.3s;
+    transform: scale(1.2);
+
+}
+.box-project .body .lang-skill {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.box-project .body .lang-skill span {
+    padding: 3px 8px;
+    background-color: #eee;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-left: 5px;
+}
+.box-project .body .project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-project .body .project-info .progress {
+    position: relative;
+    width: 260px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 6px;
+}
+.box-project .body .project-info .progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 6px;
+}
+.box-project .body .project-info .price {
+    font-size: 14px;
+    color: #888;
+}
+.box-project .body .project-info .price i {
+    margin-right: 5px;
+}
+@media (max-width: 767px) {
+    .box-project .body .lang-skill {
+        margin: 0;
+        flex-direction: column;
+        width: fit-content;
+        border: none;
+        padding: 0;
+    }
+    .box-project .body .project-info {
+        flex-direction: column;
+        border-top: 1px solid #eee;
+        padding-top: 15px;
+    }
+    .box-project .body .project-info .price {
+        margin-top: 10px;
+    }
+    .box-project .body .lang-skill span {
+        margin-bottom: 15px;
+    }
+}
+                                        /* Designed by Youssef Elewa  */

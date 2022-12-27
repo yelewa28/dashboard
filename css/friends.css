@@ -1,0 +1,105 @@
+.content .warpper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .content .warpper {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px
+    }
+}
+.box-friends {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.box-friends .contact i {
+    background-color: #eee;
+    color: #666;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: -10px;
+    font-size: 13px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.box-friends .contact i:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+.box-friends .contact i:first-child {
+    margin-left: -10px;
+}
+.box-friends .intro-friends {
+    text-align: center;
+    margin-top: -10px;
+}
+.box-friends .intro-friends img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.box-friends .intro-friends h4 {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box-friends .intro-friends p {
+    margin: 0;
+    font-size: 13px;
+    color: #888;
+}
+.box-friends .info {
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.box-friends .info-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-friends .info-one .info-vip {
+    font-size: 40px;
+    color: var(--orange-color);
+    opacity: 0.2;
+    font-weight: bold;
+}
+.box-friends .info .info-row {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.box-friends .info .info-row i {
+    margin-right: 5px;
+}
+.box-friends .date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-friends .date .join {
+    font-size: 13px;
+    color: #888;
+}
+@media (max-width: 380px) {
+    .box-friends .date .control {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .box-friends .date .control a {
+        text-align: center;
+    }
+
+}
+                                 /* Designed by Youssef Elewa  */
